@@ -40,7 +40,7 @@ Data Extraction
 
 - Transformed data is saved to a separate S3 bucket for downstream analysis.
 
-  ### `Data Loading and Querying:`
+  ### `3.Data Loading and Querying:`
 
 - AWS Glue Crawlers automatically scan and infer the schema of the transformed data.
 
