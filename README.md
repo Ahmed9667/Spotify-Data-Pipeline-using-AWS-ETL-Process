@@ -216,21 +216,24 @@ data_frame_key = 'transformed_data/transformed_data'+ '.csv'
 ![image](https://github.com/user-attachments/assets/82b2cc1a-f518-4168-85cd-c8664bd7150c)
 
 ```python
-0 → Minute (0)
+0 → Minute
 
-17 → Hour (17 or 5 PM UTC)
+12 → Hour (12 PM UTC)
 
-1 → Day of month (1st)
+1 → Day of the month (1st)
 
 * → Every month
 
-? → No specific day of week (used when Day-of-month is specified)
+? → No specific day of the week (you use ? when the day-of-month is set)
 
 * → Every year
 ```
 
 ###  Schedule A Trigger to run json dataset by transformation_load Function
+
 ![image](https://github.com/user-attachments/assets/6f502e54-806e-4947-97bc-7fd68ebe2aa1)
+
+
 
 
 
