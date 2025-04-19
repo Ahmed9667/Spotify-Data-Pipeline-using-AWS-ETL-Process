@@ -233,6 +233,29 @@ data_frame_key = 'transformed_data/transformed_data'+ '.csv'
 
 ![image](https://github.com/user-attachments/assets/6f502e54-806e-4947-97bc-7fd68ebe2aa1)
 
+`------------------------------------------------------------------------------------------------------------------------------------`
+
+### Create Crawler To handle dataset in AWS Glue:
+
+![image](https://github.com/user-attachments/assets/86655ed8-e3cc-4635-bbc6-86d8648864dc)
+
+#### create a database
+
+![image](https://github.com/user-attachments/assets/11b324f6-1801-4b6f-b9c3-9645a9db202c)
+
+
+#### Crawler Completed Successfully
+
+![image](https://github.com/user-attachments/assets/bb335a9b-c447-45b9-8cb3-5bc4123d0c62)
+
+
+#### Check Table of Transformed data loaded Successully
+
+![image](https://github.com/user-attachments/assets/635bde09-92dc-493c-8e09-7762b1bc2972)
+
+
+
+
 
 
 
