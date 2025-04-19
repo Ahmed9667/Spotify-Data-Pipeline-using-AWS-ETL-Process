@@ -52,7 +52,7 @@ Data Extraction
 ![DataVidhya+Projects+(1)_page-0001](https://github.com/user-attachments/assets/468bbf31-06f2-478b-adf5-4f2738220814)
 
 `------------------------------------------------------------------------------------------------------------------------------------`
-### `Steps in Depth:`
+## `Steps in Depth:`
 #### Create Extraction Lambda Function:
 
 ![image](https://github.com/user-attachments/assets/b3849909-e020-485b-9b03-092b502a0108)
