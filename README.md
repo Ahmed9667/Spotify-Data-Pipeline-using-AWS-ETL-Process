@@ -104,7 +104,7 @@ def lambda_handler(event, context):
 
 #### Create transformation lambda function and check for the extracted data from json
 
-`python
+```python
 def lambda_handler(event, context):
     s3 = boto3.client('s3')
     Bucket='spotify-etl-project-ahmed-eraki'
@@ -115,7 +115,7 @@ def lambda_handler(event, context):
             response = s3.get_object(Bucket=Bucket,Key=file_key )
             content = response['Body']
             object = json.loads(content.read())
-`
+```
 
 ![image](https://github.com/user-attachments/assets/fb7d65b5-c9c7-40ff-9f12-91870a6b4fea)
 
