@@ -213,7 +213,7 @@ data_frame_key = 'transformed_data/transformed_data'+ '.csv'
 `------------------------------------------------------------------------------------------------------------------------------------`
 ### Schedule A Trigger to Extract API Monthly in Lambda Extraction Function
 
-![image](https://github.com/user-attachments/assets/3fdc0267-8b37-48e6-8312-459b773da7be)
+![image](https://github.com/user-attachments/assets/82b2cc1a-f518-4168-85cd-c8664bd7150c)
 
 ```python
 0 → Minute (0)
