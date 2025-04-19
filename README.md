@@ -229,6 +229,8 @@ data_frame_key = 'transformed_data/transformed_data'+ '.csv'
 * → Every year
 ```
 
+###  Schedule A Trigger to run json dataset by transformation_load Function
+![image](https://github.com/user-attachments/assets/6f502e54-806e-4947-97bc-7fd68ebe2aa1)
 
 
 
