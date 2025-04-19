@@ -210,8 +210,24 @@ data_frame_key = 'transformed_data/transformed_data'+ '.csv'
 
 ![image](https://github.com/user-attachments/assets/2600dba5-1b60-4534-89d3-1b1b78ad1a01)
 
+`------------------------------------------------------------------------------------------------------------------------------------`
+### Schedule A Trigger to Extract API Monthly in Lambda Extraction Function
 
+![image](https://github.com/user-attachments/assets/3fdc0267-8b37-48e6-8312-459b773da7be)
 
+```python
+0 → Minute (0)
+
+17 → Hour (17 or 5 PM UTC)
+
+1 → Day of month (1st)
+
+* → Every month
+
+? → No specific day of week (used when Day-of-month is specified)
+
+* → Every year
+```
 
 
 
