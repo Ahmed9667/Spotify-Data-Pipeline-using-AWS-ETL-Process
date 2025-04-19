@@ -67,31 +67,37 @@ Data Extraction
 
 #### Deploy the original data extracted from API to the raw data bucket
 ```python
-import pandas as pd
 import json
 import os
-from dotenv import load_dotenv
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import boto3 #to communicate with AWS services
-
+from datetime import datetime
 
 def lambda_handler(event, context):
     # Replace these with your actual credentials
-    load_dotenv()
-    client_id = os.getenv('client_id')
-    client_secret = os.getenv('client_secret')
+    client_id = os.environ.get('client_id')
+    client_secret = os.environ.get('client_secret')
 
     # Set up authentication
     auth_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
     sp = spotipy.Spotify(auth_manager=auth_manager)
+    #the page URL of Trending 500 songs daily
+    play_list_link = 'https://open.spotify.com/playlist/0PMKjSoU937cvzkHpFJ3hf'
+    play_list_url = play_list_link.split('/')[4]
     data = sp.playlist_tracks(play_list_url)
     print(data)
 
+
     client = boto3.client('s3')
-    client.put_object(Bucket='spotify-etl-project-ahmed-eraki'  #S3 Bucket name we use
-      ,Key= 'raw_data/to_process/' #the path where I put the output of lambda code function
+    file_name = 'spotify_raw_' + str(datetime.now()) + '.json'
+
+    client.put_object(Bucket='spotify-etl-project-ahmed-eraki'
+      ,Key= 'raw_data/to_process/' + file_name   #the path where I put the output of lambda code function
       ,Body=json.dumps(data))
+
+    
+        
 ```
 
 ![image](https://github.com/user-attachments/assets/4ffbf43c-8192-48d3-aa86-0bd494888453)
